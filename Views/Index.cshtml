@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "QuickBooks Integration";
+}
+
+<h2>QuickBooks Data Query</h2>
+
+<form method="get" asp-action="QueryQuickBooks">
+    <select name="queryType">
+        <option value="Bill">Bill</option>
+        <option value="Check">Check</option>
+        <option value="Company">Company</option>
+        <option value="Invoice">Invoice</option>
+        <option value="ItemSalesTax">Item Sales Tax</option>
+    </select>
+    <button type="submit">Query</button>
+</form>
